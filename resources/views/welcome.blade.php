@@ -2,7 +2,6 @@
 @section('styles')
 @endsection
 @section('content')
-<body>
    <!-- Custom mouse start-->
    <div class="mouse-cursor cursor"></div>
    <div class="mouse-cursor cursor-follow"></div>
@@ -122,11 +121,11 @@
                            <div class="inquiry-card-nn">
                               <div class="title-inq-c">FOR SALES DEPARTMENT</div>
                               <ul>
-                                 <li><a href="tel:+919266913291"><img src="assets/images/flags/us.svg"
+                                 <li><a href="tel:+919266913291"><img src="{{ url('/') }}/public/assets/images/flags/us.svg"
                                           alt="delhi office" class="flags-size"> +91 559-394-7987</a></li>
-                                 <li><a href="tel:+919266913291"><img src="assets/images/flags/us.svg"
+                                 <li><a href="tel:+919266913291"><img src="{{ url('/') }}/public/assets/images/flags/us.svg"
                                           alt="delhi office" class="flags-size"> +91 559-394-7987</a></li>
-                                 <li><a href="tel:+918010144996"><img src="assets/images/flags/in.svg"
+                                 <li><a href="tel:+918010144996"><img src="{{ url('/') }}/public/assets/images/flags/in.svg"
                                           alt="delhi office" class="flags-size"> +91 8010144996</a></li>
                                  <li><i class="fab fa-skype"></i><a href="skype:codeyiizen?call">codeyiizen</a></li>
                                  <li><i class="fas fa-envelope"></i><a
@@ -279,7 +278,7 @@
                      innovating businesses.</p>
                   <a href="case-study.html" class="btn-main bg-btn lnk wow fadeIn" data-wow-delay="0.8s">Contact Us<i
                         class="fas fa-chevron-right fa-ani"></i><span class="circle"></span></a>
-                  <div class="awards-block-tt  wow fadeIn" data-wow-delay="1s"><img src="assets/images/awards-logo.png"
+                  <div class="awards-block-tt  wow fadeIn" data-wow-delay="1s"><img src="{{ url('/') }}/public/assets/images/awards-logo.png"
                         alt="awards-logo" class="img-fluid" /></div>
                </div>
             </div>
@@ -292,7 +291,7 @@
                            <a href="#">
                               <div class="service-card-hh">
                                  <div class="image-sr-mm">
-                                    <img alt="custom-sport" src="assets/images/service/vr.png">
+                                    <img alt="custom-sport" src="{{ url('/') }}/public/assets/images/service/vr.png">
                                  </div>
                                  <div class="title-serv-c"><span>Frontend</span> Development</div>
                               </div>
@@ -953,7 +952,7 @@
                         <div class="owl-item active" style="width: 278px; margin-right: 20px;">
                            <div class="video-review" data-tilt="" data-tilt-max="5" data-tilt-speed="1000">
                               <a class="video-link" href="https://youtu.be/FCA6ZBuB_k4?autoplay=1&amp;rel=0">
-                                 <img src="assets/images/client/client-pic.jpg" alt="client" class="img-fluid">
+                                 <img src="{{ url('/') }}/public/assets/images/client/client-pic.jpg" alt="client" class="img-fluid">
                                  <div class="review-vid-details">
                                     <div class="-vid-ico"><span class="triangle-play"></span></div>
                                     <p>Cina Cleaves</p>
@@ -964,7 +963,7 @@
                         <div class="owl-item active" style="width: 278px; margin-right: 20px;">
                            <div class="video-review" data-tilt="" data-tilt-max="5" data-tilt-speed="1000">
                               <a class="video-link" href="https://youtu.be/FCA6ZBuB_k4">
-                                 <img src="assets/images/client/client-pic-a.jpg" alt="client" class="img-fluid">
+                                 <img src="{{ url('/') }}/public/assets/images/client/client-pic-a.jpg" alt="client" class="img-fluid">
                                  <div class="review-vid-details">
                                     <div class="-vid-ico"><span class="triangle-play"></span></div>
                                     <p>Jokvch Marlin</p>
@@ -1114,13 +1113,13 @@
                   <div class="review-icons">
                      <a href="#" target="blank" class="wow fadeIn" data-wow-delay=".2s"
                         style="visibility: visible; animation-delay: 0.2s; animation-name: fadeIn;"><img
-                           src="assets/images/about/reviews-icon-1.png" alt="review" class="img-fluid"></a>
+                           src="{{ url('/') }}/public/assets/images/about/reviews-icon-1.png" alt="review" class="img-fluid"></a>
                      <a href="#" target="blank" class="wow fadeIn" data-wow-delay=".4s"
                         style="visibility: visible; animation-delay: 0.4s; animation-name: fadeIn;"><img
-                           src="assets/images/about/reviews-icon-2.png" alt="review" class="img-fluid"></a>
+                           src="{{ url('/') }}/public/assets/images/about/reviews-icon-2.png" alt="review" class="img-fluid"></a>
                      <a href="#" target="blank" class="wow fadeIn" data-wow-delay=".6s"
                         style="visibility: visible; animation-delay: 0.6s; animation-name: fadeIn;"><img
-                           src="assets/images/about/reviews-icon-3.png" alt="review" class="img-fluid"></a>
+                           src="{{ url('/') }}/public/assets/images/about/reviews-icon-3.png" alt="review" class="img-fluid"></a>
                   </div>
                </div>
             </div>
