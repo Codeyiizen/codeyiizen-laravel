@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/abouteUs',[App\Http\Controllers\HomeController::class,'abouteUs'])->name('aboutus');
+Route::get('/career',[App\Http\Controllers\HomeController::class,'career'])->name('career');
+Route::get('/portfolio',[App\Http\Controllers\HomeController::class,'portfolio'])->name('portfolio');
+Route::get('/contactus',[App\Http\Controllers\HomeController::class,'contactus'])->name('contactus');
+Route::post('/save/email',[App\Http\Controllers\HomeController::class,'saveEmail'])->name('save.email');
