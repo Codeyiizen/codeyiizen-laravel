@@ -9,15 +9,23 @@
                             delivered straight into your inbox</p>
                     </div>
                 </div>
-                <div class="col-lg-6 v-center">
+                
+                <div class="col-lg-6"> 
+                   <div style="margin-left: 30px; margin-bottom:30px;">
+                       <span class="text-success success"></span>
+                    </div>
                     <div class="email-subs-form">
-                        <form>
-                            <input type="email" placeholder="Email Your Address" name="emails">
-                            <button type="submit" name="submit" class="lnk btn-main bg-btn">Subscribe <i
-                                    class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button>
-                        </form>
+                            <input type="email" class="email" placeholder="Email Your Address" name="emails" value="">
+                            
+                            <button type="submit"  id="saveEmail" class="lnk btn-main bg-btn">Subscribe <i
+                                class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></button>
+                        
+                    </div>
+                    <div style="margin-left: 30px; margin-top:10px;">
+                       <span class="text-danger data"></span>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
