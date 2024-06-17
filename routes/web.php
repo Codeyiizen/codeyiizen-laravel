@@ -21,3 +21,4 @@ Route::get('/career',[App\Http\Controllers\HomeController::class,'career'])->nam
 Route::get('/portfolio',[App\Http\Controllers\HomeController::class,'portfolio'])->name('portfolio');
 Route::get('/contactus',[App\Http\Controllers\HomeController::class,'contactus'])->name('contactus');
 Route::post('/save/email',[App\Http\Controllers\HomeController::class,'saveEmail'])->name('save.email');
+Route::post('/save/contact/form',[App\Http\Controllers\HomeController::class,'saveContactForm'])->name('save.contact.form');

@@ -394,7 +394,7 @@
                         </div>
                      </div>
                   </div>
-
+                     
                </div>
             </div>
             <div class="col-lg-6">
@@ -626,7 +626,7 @@
          <div class="-cta-btn mt70">
             <div class="free-cta-title v-center wow fadeInUp" data-wow-delay="1s">
                <p>We <span>Promise.</span> We <span>Deliver.</span></p>
-               <a href="get-quote.html" class="btn-main bg-btn2 lnk">Let's Work Together<i
+               <a href="{{ route('contactus') }}" class="btn-main bg-btn2 lnk">Let's Work Together<i
                      class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
             </div>
          </div>
