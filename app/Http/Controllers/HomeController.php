@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Validator;
 use App\Models\Useremail;
+use App\Models\Contacts;
+use Mail;
+use App\Mail\ContactMail;
 
 class HomeController extends Controller
 {
@@ -40,6 +43,19 @@ class HomeController extends Controller
         }else{
         return response()->json($validator->errors()->all());
         }
+    }
+
+    public function saveContactForm(Request $request){    
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email|unique:contact,email',
+            'mobile' => 'required|numeric',
+            'requirement' => 'required',
+            'massage' => 'required',
+
+        ]);
+        Contacts::create($request->all());
+        return redirect()->back()->with(['success' => 'Thank you for contact us. we will contact you shortly.']);
     }
 
     
