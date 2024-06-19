@@ -1,4 +1,4 @@
-<header class="nav-bg-b main-header navfix fixed-top menu-white">
+<header class="main-header navfix fixed-top menu-white{{Request::is('/') ? 'nav-bg-b' : 'nav-bg-w'}}">
       <div class="container-fluid m-pad">
          <div class="menu-header">
             <div class="dsk-logo"><a class="nav-brand" href="{{ url('/') }}">

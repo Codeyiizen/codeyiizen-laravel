@@ -601,7 +601,7 @@
 	</section>
 	<!--End Team-->
 	<!--Start Location-->
-	<section class="our-office pad-tb">
+	<!-- <section class="our-office pad-tb">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
@@ -671,7 +671,8 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
+ @include('front-end.ouroffice')
 @endsection
 @section('script')
 // code for page specific script
