@@ -199,7 +199,7 @@
 </section>
 <!--End Enquire Form-->
 <!--Start Location-->
-<section class="contact-location pad-tb bglight">
+<!-- <section class="contact-location pad-tb bglight">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -251,7 +251,8 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
+@include('front-end.ouroffice')
 @endsection
 @section('script')
 // code for page specific script
