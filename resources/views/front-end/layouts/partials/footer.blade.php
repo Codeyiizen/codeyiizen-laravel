@@ -141,7 +141,7 @@
                                     class="fab fa-linkedin"></i></a>
                         </div>
                         <div class="footer-">
-                            <p>Copyright &copy; 2015 - 2021 Codeyiizen Software & Services Pvt. Ltd.</p>
+                            <p>Copyright &copy; 2015 - <?php echo date("Y"); ?> Codeyiizen Software & Services Pvt. Ltd.</p>
                         </div>
                     </div>
                 </div>
