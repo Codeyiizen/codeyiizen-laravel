@@ -3,15 +3,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Website Designing Company in Delhi, Web Development Company in India | Codeyiizen</title>
-    <link rel="publisher"
-        href="https://plus.google.com/b/111162949289627104439/+CodeyiizenSoftwareServicesPvtLtd2016" />
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Website Designing Company in Delhi, Web Development Company in India" />
-    <meta name="description"
-        content="Codeyiizen is a fast growing Web development, Website designing, Mobile Apps development, CMS and Wordpress Development Company in Delhi, India. Own company also deals with US, UK, Canada and Australia." />
-    <meta name="keywords"
-        content="Best Web development Company in Delhi,Best Website Designing Company in Delhi,Software Development Services in Delhi India" />
+    <link rel="publisher" href="https://plus.google.com/b/111162949289627104439/+CodeyiizenSoftwareServicesPvtLtd2016" />
+            <meta property="og:locale" content="en_US" />
+            <meta property="og:type" content="website" />
+        @if(\Request::is('/'))
+            <meta property="og:title" content="{{ $metaTagHome['title'] }}" />
+            <meta name="description" content="{{$metaTagHome['description'] }}" />
+            <meta name="keywords" content="{{$metaTagHome['keyword'] }}" />
+        @elseif(\Request::is('abouteUs'))
+            <meta property="og:title" content="{{ $metaTagAboutUs['title'] }}" />
+            <meta name="description" content="{{$metaTagAboutUs['description'] }}" />
+            <meta name="keywords" content="{{$metaTagAboutUs['keyword'] }}" />
+        @elseif(\Request::is('contactus')) 
+            <meta property="og:title" content="{{ $metaTagContactUs['title'] }}" />
+            <meta name="description" content="{{$metaTagContactUs['description'] }}" />
+            <meta name="keywords" content="{{$metaTagContactUs['keyword'] }}" />
+        @else
+            <meta property="og:title" content="" />
+            <meta name="description" content="" />
+            <meta name="keywords" content="{" />
+        @endif
     <script type="application/ld+json">
     {
         "@context": "http:\/\/schema.org\/",
